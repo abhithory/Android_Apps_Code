@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".generated.LinkGeneratedActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/gla_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/gla_back_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="12dp"
+                        android:foreground="?attr/selectableItemBackground"
+
+                        android:src="@drawable/ic_baseline_arrow_back_24"
+                        app:tint="@color/colorOnPrimary" />
+
+                    <TextView
+                        android:id="@+id/gla_textView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_weight="1"
+                        android:text="@string/app_name"
+                        android:textColor="@color/colorHeading"
+                        android:textSize="32dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/gla_banner_ad_1_adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-2058781353307220/3002208600"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gla_toolbar"/>
+
+
+            <TextView
+                android:id="@+id/gla_heading_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Your Link is Here"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="34dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gla_banner_ad_1_adView"/>
+
+            <TextView
+                android:id="@+id/gla_your_link_box"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="12dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/custom_input_text"
+                android:maxLines="3"
+                android:textSize="18dp"
+                android:hint="Your Link"
+                android:text="Your Link"
+                android:paddingLeft="12dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="6dp"
+                android:linksClickable="true"
+                android:autoLink="all"
+                android:textColorLink="@color/colorHeading"
+
+                android:elevation="12dp"
+                android:translationZ="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gla_heading_text" />
+
+            <Button
+                android:id="@+id/gla_copy_link_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="24dp"
+                android:backgroundTint="@color/colorHeading"
+                android:text="Copy"
+                android:textColor="@color/colorOnPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gla_your_link_box" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gla_copy_link_b"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="Link Title:"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:id="@+id/gla_title_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="12dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/custom_input_text"
+                android:textSize="16dp"
+                android:hint="Link Title"
+                android:paddingLeft="12dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="6dp"
+                android:text="This is title of link"
+                android:linksClickable="true"
+                android:autoLink="all"
+                android:textColorLink="@color/colorHeading"
+               />
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/gla_banner_ad_2_adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    app:adSize="LARGE_BANNER"
+                    app:adUnitId="ca-app-pub-2058781353307220/5895965255"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gla_title_box"
+                    />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="Link Description:"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:id="@+id/gla_des_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="12dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/custom_input_text"
+                android:textSize="16dp"
+                android:hint="Your Description"
+                android:paddingLeft="12dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="6dp"
+                android:text="this is description box"
+                android:linksClickable="true"
+                android:autoLink="all"
+                android:textColorLink="@color/colorHeading"
+                />
+
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/gla_banner_ad_3_adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:adSize="MEDIUM_RECTANGLE"
+                app:adUnitId="ca-app-pub-2058781353307220/5393047157"
+                />
+
+            </LinearLayout>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>

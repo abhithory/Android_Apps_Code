@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorPrimary"
+    tools:context=".profile.ChangeUserDetailsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/change_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/custom_input_text"
+            android:hint="Name"
+            android:maxLength="50"
+            android:paddingLeft="12dp"
+            android:paddingTop="12dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"  />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/change_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/custom_input_text"
+            android:hint="Phone no."
+            android:maxLength="50"
+            android:paddingLeft="12dp"
+            android:paddingTop="12dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:inputType="phone"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/change_details_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_box"
+            android:backgroundTint="@color/colorHeading"
+            android:textColor="@color/colorOnPrimary"
+            android:layout_marginTop="18dp"
+            android:text="Change Details" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
